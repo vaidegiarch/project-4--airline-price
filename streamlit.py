@@ -6,9 +6,9 @@ import pickle
 # ---------------------
 # Load trained model
 # ---------------------
-with open("model/xgb_model.pkl", "rb") as file:
-    model = pickle.load(file)
 
+with open("xgb_model.pkl", "rb") as file:
+    model = pickle.load(file)
 # ---------------------
 # Streamlit UI
 # ---------------------

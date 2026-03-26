@@ -18,15 +18,7 @@ Predict the price of airline tickets based on your flight details.
 
 MODEL_PATH = "xgb_model.pkl"  # just the root file
 
-try:
-    with open(MODEL_PATH, "rb") as file:
-        model = pickle.load(file)
-except FileNotFoundError:
-    st.error(f"Model file not found at {MODEL_PATH}")
-    st.stop()
-except Exception as e:
-    st.error(f"Error loading model: {e}")
-    st.stop()
+
 # ---------------------
 # Load trained model safely
 # ---------------------

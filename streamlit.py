@@ -19,7 +19,8 @@ Predict the price of airline tickets based on your flight details.
 # Load trained model safely
 # ---------------------
 BASE_DIR = os.path.dirname(__file__)
-MODEL_PATH = os.path.join(BASE_DIR, "model", "xgb_model.pkl")
+
+MODEL_PATH = os.path.join("model", "xgb_model.pkl")
 
 try:
     with open(MODEL_PATH, "rb") as file:

@@ -5,6 +5,12 @@ import numpy as np
 import os
 import pickle
 
+@st.cache_resource
+def load_model():
+    with open("/content/drive/MyDrive/xgb_model.pkl", "rb") as file:
+        return pickle.load(file)
+
+model = load_model()
 # ---------------------
 # Set page config
 # ---------------------
